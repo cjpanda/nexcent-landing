@@ -1,0 +1,143 @@
+.nex__header {
+	display: flex;
+	background: var(--color-silver);
+}
+
+.nex__header-content {
+	flex:1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-right: 5rem;
+}
+
+.nex__header-content h1 {
+	font-family: var(--font-family);
+	font-weight: 600;
+	line-height: 76px;
+	font-size: 64px;
+	color: var( --color-secondary);
+}
+
+.nex__text-green {
+	color: var(--color-primary);
+	font-family: var(--font-family);
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 76px;
+	letter-spacing: 0em;
+	text-align: left;
+
+}
+.nex__header-content p {
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: var( --color-secondary);
+	margin-top: 1rem;
+}
+
+.nex__header-content__input {
+	width: 100%;
+	margin: 2rem 0 1rem; 
+	display: flex;
+}
+
+.nex__header-content__input input {
+	background: var(--color-gray);
+	border-radius: 5px 0px 0px 5px;
+	font-size: 20px;
+	line-height: 27px;
+	font-family: var(--font-family);
+	color: var(--color-secondary);
+	flex: 2;
+	width: 100%;
+	min-height: 50px;
+	border: 2px solid var(--color-silver);
+	padding: 0 1rem;
+	outline: none;
+}
+
+.nex__header-content__input button {
+	width: 128px;
+	height: 52px;
+	padding: 14px 32px 14px 32px;
+	border-radius: 4px;
+	gap: 10px;
+
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-silver);
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nex__header-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nex__header-image img {
+	width: 80%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+	.nex__header {
+		flex-direction: column;
+	}
+
+	.nex__header-content {
+		margin: 0 0 3rem;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.nex__header h1,
+	.nex__text-green {
+		font-size: 48px;
+		line-height: 60px;
+	}
+	.nex__header p {
+		font-size: 17px;
+		line-height: 24px;
+	}
+
+	.nex__header-content__input input,
+	.nex__header-content__input button {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+
+@media screen and (max-width: 490px) {
+	.nex__header h1,
+	.nex__text-green {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+	.nex__header p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.nex__header-content__input input,
+	.nex__header-content__input button {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+
