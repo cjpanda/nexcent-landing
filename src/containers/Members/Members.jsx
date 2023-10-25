@@ -10,6 +10,7 @@ const Members = () => {
         <h2>Helping a local <span>business reinvent itself</span></h2>
         <p>We reached here with our hard work and dedication</p>
       </div>
+      
       <div className="nex__member-image">
         
         <img  src={members} alt="members" />
